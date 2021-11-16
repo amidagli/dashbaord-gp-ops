@@ -1,0 +1,119 @@
+<div id="page-content-wrapper">
+    <div class="page-content">
+     
+        <div class="table-header">
+        <div class="row">
+          <div class="col-md-4 col-sm-3">
+            <h3>{{title}}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" style="padding-left: 2rem;">
+            <table class="table table-hover table-bordered text-center">
+              <thead>
+                <tr>
+                  <th class="text-center">#</th>
+                  <th class="text-center">Issues</th>
+                  <th class="text-center">Type</th>
+                  <th class="text-center">No.of Users affected</th>
+                  <th class="text-center">Entry/Exit</th>
+                  <th class="text-center">App Version</th>
+                  <th class="text-center">Date/First reported</th>
+                  <th class="text-center">Issue Type</th>
+                  <th class="text-center">Status</th>
+                  <th class="text-center">Action</th>
+                  
+                </tr>
+              </thead>
+              <!-- <tr *ngFor="let attendant of attendantList | paginate: { itemsPerPage: 10, currentPage: p }; let i =index"> -->
+              <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Parking Passes</td>
+                    <td>Crash</td>
+                    <td>2</td>
+                    <td>Entry</td>
+                    <td>1.19.3</td>
+                    <td>3/11/2021</td>
+                    <td>Repetitive Issue</td>
+                    <td style="color:red;"> Fail </td>
+                    <td>
+                        <button class="btn btn-danger"> Reopen </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>2</td>
+                    <td>OCR Out Activity</td>
+                    <td>Connection</td>
+                    <td>3</td>
+                    <td>Entry/Exit</td>
+                    <td>1.19.3</td>
+                    <td>5/11/2021</td>
+                    <td>New Issue</td>
+                    <td style="color: green;">Closed</td>
+                    <td>
+                        <button class="btn btn-success"> Resolved </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>3</td>
+                    <td>Vehicle Record Sync</td>
+                    <td>Cron Job</td>
+                    <td>3</td>
+                    <td>Exit</td>
+                    <td>1.19.1</td>
+                    <td>10/11/2021</td>
+                    <td>New Issue</td>
+                    <td style="color: orange;">WIP</td>
+                    <td>
+                        <button class="btn btn-warning"> Pending </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>4</td>
+                    <td>Printer connection</td>
+                    <td>Connection</td>
+                    <td>1</td>
+                    <td>Entry/Exit</td>
+                    <td>1.19.3/1.19.1</td>
+                    <td>10/11/2021</td>
+                    <td>Repetitive Issue</td>
+                    <td style="color: red;">Open</td>
+                    <td>
+                        <button class="btn btn-danger"> Open </button>
+                    </td>
+                  </tr>
+                  
+                <!-- <tr *ngFor="let attendant of attendantList; let i =index">
+                  <td scope="row"> {{(i+1) + (p-1)*10}}.</td>
+                  <td> {{ attendant.name }}</td>
+                  <td>{{attendant.businessId}}</td>
+                  <td>{{attendant.phoneNumber}}</td>
+                  <td>{{attendant.password}}</td>
+                  <td>
+                    <button class="btn btn-warning" [disabled]="!canEdit()" (click)="editItem(i)">Edit</button>
+                  </td>
+                  <td>
+                    <span class="table-remove">
+                      <button type="button" [disabled]="!canDelete()" class="btn btn-danger" (click)="removeDeviceItem(i)">Remove</button>
+                    </span>
+                  </td>
+                </tr> -->
+              </tbody>
+              <!-- <button mat-fab color="primary" [hidden]="!canEdit()" class="custom-button" (click)="openModal()">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button> -->
+  
+            </table>
+          <!-- <div style='text-align: center'>
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  

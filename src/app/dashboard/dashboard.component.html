@@ -1,0 +1,188 @@
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper"  [ngClass]="status ? 'hide' : 'show'">
+      <div class="sidebar-heading">GETPARKING </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Vehicles Overview</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Currency Transactions</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">SMS Events</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+        <div class="container-fluid">
+          <button class="btn btn-outline-secondary" (click)="clickEvent()"> Toggle </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      
+<div class="container-fluid">    
+ <div id="page-content-wrapper">
+  <div class="page-content">
+
+    <div class="table-header">
+      <div class="row">
+        <!-- <div class="col-md-4 col-sm-3">
+          <h3>{{title}}</h3>
+        </div> -->
+      </div>
+    </div>
+
+    <table class="inlineTable">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-bordered text-center">
+              <tr>
+                <th></th><th></th>
+                <th> 2W </th>
+                <th> 4W </th>
+              </tr>
+              <tr>
+                  <th rowspan="3">Boom Barrier Count</th>
+                  <th>Entry</th>
+                  <td>128</td>
+                  <td>336</td>
+              </tr>
+              <tr>
+                  <th>Exit</th>
+                  <td>144</td>
+                  <td>330</td>
+              </tr>
+              <tr>
+                  <th>Total</th>
+                  <td>582</td>
+                  <td>996</td>
+              </tr>
+
+              <tr>
+                  <th rowspan="3">LED Count</th>
+                  <th>Entry</th>
+                  <td>100</td>
+                  <td>236</td>
+              </tr>
+              <tr>
+                  <th>Exit</th>
+                  <td>58</td>
+                  <td>100</td>
+              </tr>
+              <tr>
+                  <th>Total</th>
+                  <td>158</td>
+                  <td>336</td>
+              </tr>
+
+              <tr>
+                  <th rowspan="3">ANPR Count</th>
+                  <th>Entry</th>
+                  <td>95</td>
+                  <td>55</td>
+              </tr>
+              <tr>
+                  <th>Exit</th>
+                  <td>95</td>
+                  <td>75</td>
+              </tr>
+              <tr>
+                  <th>Total</th>
+                  <td>190</td>
+                  <td>120</td>
+              </tr>
+
+              <tr>
+                  <th rowspan="3">PMS Count</th>
+                  <th>Entry</th>
+                  <td>221</td>
+                  <td>112</td>
+              </tr>
+              <tr>
+                  <th>Exit</th>
+                  <td>221</td>
+                  <td>112</td>
+              </tr>
+              <tr>
+                  <th>Total</th>
+                  <td>442</td>
+                  <td>224</td>
+              </tr>
+
+
+          
+            
+              <!-- <tr>
+                  <th colspan="4"> 4W </th>
+                </tr>
+                <tr>
+                    <th rowspan=" 3 ">BBC</th>
+                    <th>Entry</th>
+                    <th>Exit</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <th rowspan="3">LED</th>
+                    <th>Entry</th>
+                    <th>Exit</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <th rowspan="3">ANPR</th>
+                    <th>Entry</th>
+                    <th>Exit</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <th rowspan="3">PMS</th>
+                    <th>Tickets</th>
+                    <th>Receipts</th>
+                    <th>Total</th>
+                </tr> -->
+            </table>
+          </div>
+        </div>
+      </div>
+    </table>
+  </div>
+</div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  

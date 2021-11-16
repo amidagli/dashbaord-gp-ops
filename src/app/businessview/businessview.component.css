@@ -1,0 +1,45 @@
+.table-header {
+    padding: 20px;
+  }
+  .custom-day {
+    text-align: center;
+    padding: 0.185rem 0.25rem;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .custom-day.focused {
+    background-color: #e6e6e6;
+  }
+  
+  .custom-day.range,
+  .custom-day:hover {
+    background-color: rgb(2, 117, 216);
+    color: white;
+  }
+  
+  .custom-day.faded {
+    background-color: rgba(2, 117, 216, 0.5);
+  }
+  
+  .dropDown {
+    top: 10px !important;
+  }
+  .inlineTable {
+    display: inline-block;
+}
+.table-bordered {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.table th {
+  padding: .50rem;
+  vertical-align: top;
+}
+.card-word {
+  font-size: 2em;
+  color: red;
+  font-family: 'Lucida Calligraphy'
+}
